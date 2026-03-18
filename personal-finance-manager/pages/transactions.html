@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinanceFlow — Transactions</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/transactions.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__logo">
+      <div class="sidebar__logo-icon">💰</div>
+      <div>
+        <div class="sidebar__logo-text">FinanceFlow</div>
+        <div class="sidebar__logo-sub">Personal Finance</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <span class="nav__section-label">Overview</span>
+      <a href="../index.html" class="nav__link"><span class="nav__icon">🏠</span> Dashboard</a>
+      <span class="nav__section-label">Manage</span>
+      <a href="transactions.html" class="nav__link nav__link--active"><span class="nav__icon">💸</span> Transactions</a>
+      <a href="accounts.html" class="nav__link"><span class="nav__icon">🏦</span> Accounts</a>
+      <a href="budget.html" class="nav__link"><span class="nav__icon">🎯</span> Budgets</a>
+      <span class="nav__section-label">Insights</span>
+      <a href="reports.html" class="nav__link"><span class="nav__icon">📊</span> Reports</a>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="sidebar__user">
+        <div class="sidebar__avatar">U</div>
+        <div>
+          <div class="sidebar__user-name">User</div>
+          <div class="sidebar__user-role">Personal Account</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main class="main-content">
+    <div class="page">
+      <div class="page-header">
+        <div>
+          <h1 class="page-title">Transactions</h1>
+          <p class="page-subtitle">Manage all your income and expenses</p>
+        </div>
+        <button class="btn btn--primary" id="addTxnBtn">+ Add Transaction</button>
+      </div>
+      <div id="transactionsRoot"></div>
+    </div>
+  </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script type="module" src="../js/modules/transactions.js"></script>
+<script type="module" src="../js/app.js"></script>
+</body>
+</html>

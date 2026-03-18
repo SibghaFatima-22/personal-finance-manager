@@ -1,0 +1,71 @@
+/* ============================================================
+   dashboard.css — Dashboard Page Styles
+   Personal Finance Manager
+   ============================================================ */
+
+/* ─── Greeting ──────────────────────────────────────────────── */
+.page-title {
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Recent Transactions List ──────────────────────────────── */
+.txn-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.txn-item:last-child { border-bottom: none; }
+
+.txn-item__icon {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.txn-item__icon--income {
+  background: var(--income-dim);
+}
+.txn-item__icon--expense {
+  background: var(--expense-dim);
+}
+
+.txn-item__info { flex: 1; min-width: 0; }
+
+.txn-item__category {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.txn-item__meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.txn-item__amount {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.txn-item__amount--income { color: var(--income); }
+.txn-item__amount--expense { color: var(--expense); }
+
+/* ─── Chart containers ──────────────────────────────────────── */
+.card canvas {
+  max-width: 100%;
+}
