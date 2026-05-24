@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h1>Finance Manager</h1>
+
+        <a href="admin.html">Admin Panel</a>
+
+    </nav>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <h2>Track Your Finances</h2>
+
+            <p>Manage income, expenses and savings.</p>
+
+        </section>
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="summary">
+
+            
+            <div class="card income-card">
+                <h3>Total Income</h3>
+                <p id="totalIncome">0</p>
+            </div>
+
+            <div class="card expense-card">
+                <h3>Total Expense</h3>
+                <p id="totalExpense">0</p>
+            </div>
+
+            <div class="card balance-card">
+                <h3>Balance</h3>
+                <p id="balance">0</p>
+            </div>
+
+        </section>
+        
+        <!-- REPORTS -->
+
+<section class="reports-section">
+
+    <h2>Financial Reports</h2>
+
+    <select id="reportFilter">
+
+        <option value="weekly">
+            Weekly
+        </option>
+
+        <option value="monthly">
+            Monthly
+        </option>
+
+        <option value="yearly">
+            Yearly
+        </option>
+
+    </select>
+
+    <canvas id="financeChart">
+
+    </canvas>
+
+</section>
+
+        <!-- FORM -->
+
+        <section class="form-section">
+
+            <h2>Add Transaction</h2>
+
+            <form id="transactionForm">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Transaction Title">
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount">
+
+                <select id="type">
+
+                    <option value="">Select Type</option>
+                    <option value="Income">Income</option>
+                    <option value="Expense">Expense</option>
+
+                </select>
+
+                <select id="category">
+
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Job">Job</option>
+                    <option value="Shopping">Shopping</option>
+
+                </select>
+
+                <input
+                    type="date"
+                    id="date">
+
+                <textarea
+                    id="notes"
+                    placeholder="Notes"></textarea>
+
+                <button type="submit">
+                    Add Transaction
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- FILTER -->
+
+        <section class="filter-section">
+
+            <h2>Filter Transactions</h2>
+
+            <select id="filterType">
+
+                <option value="All">
+                    All
+                </option>
+
+                <option value="Income">
+                    Income
+                </option>
+
+                <option value="Expense">
+                    Expense
+                </option>
+
+            </select>
+
+        </section>
+
+        <!-- LOADING -->
+
+        <p id="loadingMessage">
+            Loading...
+        </p>
+
+        <!-- ERROR -->
+
+        <p id="errorMessage">
+            Something went wrong.
+        </p>
+
+        <!-- LIST -->
+
+        <section class="transaction-list">
+
+            <h2>Transactions</h2>
+
+            <div id="transactionContainer">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

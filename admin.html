@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="admin-navbar">
+      <h1>Admin Dashboard</h1>
+
+      <a href="index.html"> User Panel </a>
+    </nav>
+
+    <main>
+      <!-- STATS -->
+
+      <section class="admin-stats">
+        <div class="stat-card">
+          <h3>Total Transactions</h3>
+
+          <p id="transactionCount">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Income</h3>
+
+          <p id="adminIncome">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Total Expense</h3>
+
+          <p id="adminExpense">0</p>
+        </div>
+      </section>
+
+      <!-- EDIT FORM -->
+
+      <section class="edit-section">
+        <h2>Edit Transaction</h2>
+
+        <form id="editForm">
+          <input type="hidden" id="editId" />
+
+          <input type="text" id="editTitle" placeholder="Title" />
+
+          <input type="number" id="editAmount" placeholder="Amount" />
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </section>
+
+      <!-- TABLE -->
+
+      <section class="table-section">
+        <h2>Manage Transactions</h2>
+
+        <div class="table-controls">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search transactions..."
+          />
+
+          <select id="sortSelect">
+            <option value="">Sort By</option>
+
+            <option value="amountAsc">Amount Low → High</option>
+
+            <option value="amountDesc">Amount High → Low</option>
+
+            <option value="title">Title A → Z</option>
+          </select>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Amount</th>
+              <th>Type</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="adminTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
