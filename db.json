@@ -1,0 +1,50 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "title": "Salary",
+      "amount": 6000000,
+      "type": "Income",
+      "category": "Job",
+      "date": "2026-05-24",
+      "notes": "Monthly salary"
+    },
+    {
+      "id": "2",
+      "title": "Groceries",
+      "amount": 3500,
+      "type": "Expense",
+      "category": "Food",
+      "date": "2026-05-22",
+      "notes": "Weekly shopping"
+    },
+    {
+      "title": "Shopping",
+      "amount": 15000,
+      "type": "Expense",
+      "category": "Shopping",
+      "date": "2026-05-24",
+      "notes": "Monthly Shopping",
+      "id": "dmpDdRAmKSo"
+    },
+    {
+      "title": "Salary",
+      "amount": 700000,
+      "type": "Income",
+      "category": "Job",
+      "date": "2026-06-01",
+      "notes": "Monthly Salary",
+      "id": "ju-CYMHL1Ow"
+    },
+    {
+      "title": "Shopping",
+      "amount": 6000,
+      "type": "Expense",
+      "category": "Shopping",
+      "date": "2026-05-28",
+      "notes": "",
+      "id": "sHWaaqXmU_E"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
