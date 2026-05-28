@@ -89,3 +89,21 @@ admin.html
 ---
 
 ## Screenshots
+
+### User Dashboard
+[User Dashboard](screenshots/user-dashboard.png)
+
+### Add Transaction
+[Add Transaction](screenshots/add-transaction.png)
+
+### Reports Dashboard
+[Reports](screenshots/reports-chart.png)
+
+### Admin Dashboard
+[Admin](screenshots/admin-dashboard.png)
+
+### Edit Feature
+[Edit](screenshots/edit-feature.png)
+
+### Search & Sort
+[Search Sort](screenshots/search-sort.png)
