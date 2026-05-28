@@ -1,7 +1,7 @@
 # Personal Finance Manager
 
-Name: YOUR NAME  
-Roll No: YOUR ROLL NUMBER
+Name: Sibgha Fatima 
+Roll No: F24BDOCS1M01046
 
 ## Project Description
 
@@ -38,31 +38,31 @@ Admins can:
 
 ### User Panel
 
-✔ GET transactions
+ GET transactions
 
-✔ POST new transaction
+ POST new transaction
 
-✔ Validation
+ Validation
 
-✔ Filtering
+ Filtering
 
-✔ Financial reports
+ Financial reports
 
-✔ Chart dashboard
+ Chart dashboard
 
 ### Admin Panel
 
-✔ GET all data
+ GET all data
 
-✔ PATCH edit
+ PATCH edit
 
-✔ DELETE records
+ DELETE records
 
-✔ Statistics dashboard
+ Statistics dashboard
 
-✔ Search
+ Search
 
-✔ Sorting
+ Sorting
 
 ---
 
@@ -89,5 +89,3 @@ admin.html
 ---
 
 ## Screenshots
-
-(Add screenshots here before submission)
