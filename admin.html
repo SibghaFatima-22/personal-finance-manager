@@ -50,9 +50,9 @@
         <form id="editForm">
           <input type="hidden" id="editId" />
 
-          <input type="text" id="editTitle" placeholder="Title" />
+          <input type="text" id="editTitle" placeholder="Title" disabled />
 
-          <input type="number" id="editAmount" placeholder="Amount" />
+          <input type="number" id="editAmount" placeholder="Amount" disabled />
 
           <button type="submit">Save Changes</button>
         </form>
@@ -67,8 +67,14 @@
           <input
             type="text"
             id="searchInput"
-            placeholder="Search transactions..."
+            placeholder="Search By Title"
           />
+
+          <select id="filterTypeSelect">
+            <option value="All">All Types</option>
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+          </select>
 
           <select id="sortSelect">
             <option value="">Sort By</option>
@@ -93,6 +99,8 @@
 
           <tbody id="adminTableBody"></tbody>
         </table>
+
+        <div id="adminPagination" class="pagination-controls"></div>
       </section>
     </main>
 
