@@ -1,49 +1,94 @@
 {
   "transactions": [
     {
-      "id": "1",
       "title": "Salary",
-      "amount": 6000000,
+      "amount": 50000,
       "type": "Income",
       "category": "Job",
-      "date": "2026-05-24",
-      "notes": "Monthly salary"
+      "date": "2026-04-01",
+      "notes": "Monthly Salary",
+      "id": "Jl48n9zOByM"
     },
     {
-      "id": "2",
-      "title": "Groceries",
-      "amount": 3500,
-      "type": "Expense",
-      "category": "Food",
-      "date": "2026-05-22",
-      "notes": "Weekly shopping"
-    },
-    {
-      "title": "Shopping",
+      "title": "Bills",
       "amount": 15000,
       "type": "Expense",
-      "category": "Shopping",
-      "date": "2026-05-24",
-      "notes": "Monthly Shopping",
-      "id": "dmpDdRAmKSo"
+      "category": "Bills",
+      "date": "2026-04-02",
+      "notes": "Monthly Bills",
+      "id": "rtGiMclDY2k"
     },
     {
       "title": "Salary",
-      "amount": 700000,
+      "amount": 50000,
+      "type": "Income",
+      "category": "Job",
+      "date": "2026-05-01",
+      "notes": "Monthly Salary",
+      "id": "UX47T20aNzE"
+    },
+    {
+      "title": "Bills",
+      "amount": 12000,
+      "type": "Expense",
+      "category": "Bills",
+      "date": "2026-05-02",
+      "notes": "Monthly Bills",
+      "id": "SF-rh5Y-7bw"
+    },
+    {
+      "title": "Groceries",
+      "amount": 6000,
+      "type": "Expense",
+      "category": "Food",
+      "date": "2026-05-04",
+      "notes": "Monthly Grocery",
+      "id": "C_C7w0l-tyI"
+    },
+    {
+      "title": "Medicines",
+      "amount": 5000,
+      "type": "Expense",
+      "category": "Pharmacy",
+      "date": "2026-05-11",
+      "notes": "Stomach Medicine",
+      "id": "ZX6MO7J1wf4"
+    },
+    {
+      "title": "Salary",
+      "amount": 120000,
       "type": "Income",
       "category": "Job",
       "date": "2026-06-01",
       "notes": "Monthly Salary",
-      "id": "ju-CYMHL1Ow"
+      "id": "D00yL8xCe40"
     },
     {
-      "title": "Shopping",
-      "amount": 6000,
+      "title": "Groceries",
+      "amount": 10000,
       "type": "Expense",
-      "category": "Shopping",
-      "date": "2026-05-28",
-      "notes": "",
-      "id": "sHWaaqXmU_E"
+      "category": "Food",
+      "date": "2026-06-09",
+      "notes": "Monthly Grocery",
+      "id": "pB3vU3Z06E4"
+    },
+    {
+      "title": "Bills",
+      "amount": 25000,
+      "type": "Expense",
+      "category": "Bills",
+      "date": "2026-06-14",
+      "notes": "Monthly Bill",
+      "id": "tlclTKuxv38"
+    },
+    {
+      "title": "Online Job",
+      "amount": 50000,
+      "type": "Income",
+      "category": "Freelancing",
+      "date": "2026-06-14",
+      "notes": "Freelancing",
+      "id": "4fU3V5v7QWI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
